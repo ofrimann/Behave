@@ -1,6 +1,7 @@
 ; Change these constants to match your system
 #define JavaProjectPath "D:\Dropbox\Projects\Behave"
-#define SetupOutputPath "K:\Lab-moshe\Ofri"
+#define SetupOutputPath "C:\Users\ofri\Desktop"
+#define VLCPath "D:\Program Files (x86)\VideoLAN\VLC"
 
 ; --------------------------------------------------------------------------
 
@@ -35,9 +36,9 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 
 [Files]
 Source: "{#JavaProjectPath}\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#JavaProjectPath}\vlc\libvlc.dll"; DestDir: "{app}\vlc"; Flags: ignoreversion
-Source: "{#JavaProjectPath}\vlc\libvlccore.dll"; DestDir: "{app}\vlc"; Flags: ignoreversion
-Source: "{#JavaProjectPath}\vlc\plugins\*"; DestDir: "{app}\vlc\plugins"; Excludes: "\gui,\lua"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#VLCPath}\libvlc.dll"; DestDir: "{app}\vlc"; Flags: ignoreversion
+Source: "{#VLCPath}\libvlccore.dll"; DestDir: "{app}\vlc"; Flags: ignoreversion
+Source: "{#VLCPath}\plugins\*"; DestDir: "{app}\vlc\plugins"; Excludes: "\gui,\lua"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
