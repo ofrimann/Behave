@@ -1,0 +1,5 @@
+vlc/**
+target/**
+test_logs/**
+Behave.exe
+nb*.xml
